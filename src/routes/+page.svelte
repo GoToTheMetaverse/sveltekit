@@ -39,7 +39,7 @@
 	</h2>
 
 	<h3>
-		count: {count}
+		c-count: {count}
 	</h3>
 
 	<Counter />
