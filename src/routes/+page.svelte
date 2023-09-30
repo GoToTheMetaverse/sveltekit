@@ -2,6 +2,19 @@
 	import Counter from './Counter.svelte';
 	import welcome from '$lib/images/svelte-welcome.webp';
 	import welcome_fallback from '$lib/images/svelte-welcome.png';
+	import {onMount} from 'svelte';
+
+	let count = 0;
+
+	onMount(async() => {
+		console.log('count',count);
+
+		const res = await fetch('/api');
+		const data = await res.json();
+		console.log('data',data);
+		count = data.count;
+	});
+
 </script>
 
 <svelte:head>
@@ -24,6 +37,10 @@
 	<h2>
 		try editing <strong>src/routes/+page.svelte</strong>
 	</h2>
+
+	<h3>
+		count: {count}
+	</h3>
 
 	<Counter />
 </section>
