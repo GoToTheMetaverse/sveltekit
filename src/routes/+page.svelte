@@ -38,9 +38,19 @@
 		try editing <strong>src/routes/+page.svelte</strong>
 	</h2>
 
-	<h3>
-		c-count: {count}
-	</h3>
+	<div class="m-4 p-4 rounded-xl  bg-black text-white text-xl">
+		<div>count: {count}</div>
+		<button type="button" class="btn-icon variant-filled">(icon)</button>
+<button type="button" class="btn variant-filled">Button</button>
+<button type="button" class="btn variant-filled">
+	<span>(icon)</span>
+	<span>Button</span>
+</button>
+	</div>
+
+	<div>
+		
+	</div>
 
 	<Counter />
 </section>
