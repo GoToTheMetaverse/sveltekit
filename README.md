@@ -11,3 +11,17 @@ https://port-0-sveltekit-testapp-euegqv2bln5l1c38.sel5.cloudtype.app/
 
 이페이지 보고 메뉴얼로 설치
 https://www.skeleton.dev/docs/get-started
+
+# 빌드
+
+일단 설치
+
+```
+npm install
+```
+
+개발하기
+
+```
+npm run dev
+```

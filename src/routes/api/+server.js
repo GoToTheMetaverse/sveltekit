@@ -1,3 +1,5 @@
+import { ws_addr } from "$lib/types";
+
 let count = 0;
 
 export function GET() {
@@ -5,6 +7,7 @@ export function GET() {
   return new Response(
     JSON.stringify({
       count,
+      ws_addr,
     })
   );
 }
